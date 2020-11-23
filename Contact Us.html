@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<style>
+    body {
+        margin: 0%;
+        padding: 0%;
+        background-color: black;
+        font-family: 'Times New Roman', Times, serif;
+    }
+   .main-container {
+       overflow: hidden !important;
+       max-width: 100% !important;
+       overflow-x: hidden !important;
+   }
+
+    /* Navigation Menu  */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        padding-top:
+
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .ul_menu {
+        margin-right: 30px;
+    }
+    .li_menu {
+        margin-left: 50px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        color: white;
+    }
+
+    nav ul a {
+        text-decoration: none;
+    }
+
+    nav ul:first-child {
+        margin-left: 100px;
+    }
+
+    /* left and right line  */
+    .left-line {
+        border-left: 1px solid gray;
+        position: absolute;
+        left: 220px;
+        height: 100vh;
+    }
+
+    .right-line {
+        border-right: 1px solid gray;
+    
+        position:absolute;
+        height: 100vh;
+        left: 900px;
+        top:50px;
+    }
+
+    .second-right-line {
+        border-right: 1px solid gray;
+        position: absolute;
+        height: 100vh;
+        left: 1100px;
+        top:50px;
+    }
+
+    .bottom-line {
+        border-bottom: 1px solid gray;
+        width: 880px;
+        position: absolute;
+        top: 800px;
+        left: 120px;
+
+    }
+
+    /* Contact Us div  */
+    .contact-us {
+        position: absolute;
+        top: 160px;
+        left: 160px;
+        color: #fcfdff;
+    }
+
+    .h1-contact-us {
+        font-size: 6em;
+        position: relative;
+        bottom: 30px;
+        right: 20px;
+        color: #fcfdff;
+
+    }
+
+    h4 {
+        position: absolute;
+        top: 350px;
+        left: 350px;
+        color: #fcfdff;
+
+    }
+
+    /* form  */
+    form {
+        position: absolute;
+        display: grid;
+        width: 400px;
+       height: auto;
+        top: 460px;
+        left: 350px;
+        line-height: 2em;
+        color: gray;
+        font-size: 1.2em;
+
+    }
+
+    form input {
+        border: none;
+        border-bottom: 1px dotted gray;
+        background-color: transparent;
+    }
+
+    .right {
+        position: absolute;
+        top: 160px;
+        left: 1100px;
+
+    }
+
+    .right ul li {
+        list-style-type: none;
+        line-height: 3em;
+        color: #fcfdff;
+    }
+
+    .right ul li:first-child {
+        color: gray;
+        font-weight: bold;
+
+    }
+
+    address {
+        color: white;
+    }
+
+    /* footer  */
+
+    footer {
+
+        position: absolute;
+        top: 780px;
+        right: 200px;
+        font-size: 1.5em;
+        color: gray;
+    }
+
+    footer ul {
+        display: flex;
+
+
+    }
+
+    footer ul li {
+        list-style-type: left;
+        display: flex;
+        padding: 20px;
+    }
+    footer ul a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* button  */
+    button {
+        margin-top: 2%;
+        height: 40px;
+        background-color: gray
+    }
+    @media screen and (max-width: 600px) {
+        .ul_menu {
+            flex-direction: column;
+        }
+        form {
+            flex-direction: column;
+            margin-left: -50%;
+        }
+     
+        footer {
+            flex-direction: column;
+            position: absolute;
+            left: -25px;
+        }
+        
+    }
+
+</style>
+
+<body>
+    <div class="main-container">
+    <nav>
+        <ul>
+            <a href="#">
+                <li>Car-Buy</li>
+            </a>
+        </ul>
+        <ul class="ul_menu">
+            <a href="./Final Project.html">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li class="li_menu">About</li>
+            </a>
+            <a href="#">
+                <li class="li_menu">Contacts</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="left-line">
+    </div>
+
+    <span class="contact-us">
+        <h3>say hello to our team</h3>
+        <h1 class="h1-contact-us">Contact Us</h1>
+    </span>
+
+
+    <h4>feel free to contact us and we will get <br> back to you as soon as we can.</h4>
+
+
+    <form action="">
+        <label for="">name</label>
+        <input type="text">
+        <label for="">email address</label>
+        <input type="Email">
+        <label for="">tell us all about it</label>
+        <input type="feedback">
+     <button type="submit">Send</button>
+    </form>
+    <div class="right-line">
+
+    </div>
+    <div class="second-right-line">
+
+    </div>
+    <div class="bottom-line">
+
+    </div>
+
+
+
+    <div class="right">
+        <ul>
+            <li>opening hours</li>
+            <li>Monday - Friday</li>
+            <li>Weekend</li>
+            <li>Closed</li>
+        </ul>
+
+        <div class="second">
+            <ul>
+                <li>address</li>
+                <address>House# 99, Street# 11, <br> Wazir Akbar Khan Kabul, Afghanistan</address>
+            </ul>
+        </div>
+        <div class="support">
+            <ul>
+                <li>support</li>
+                <li>hello@CAR-BUY.com</li>
+                <li>00 93 799 799 799</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <ul>
+       <a href="#"> <li>facebook</li></a>    
+           <a href="#"> <li>instagram</li></a>
+           <a href="#"><li>youtube</li></a> 
+           <a href="#"><li>twitter</li></a> 
+        </ul>
+    </footer>
+</div>
+</body>
+
+</html>
